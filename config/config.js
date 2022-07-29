@@ -27,10 +27,6 @@ module.exports = {
     user: process.env.EMAIL_SMTP_USER,
     pass: process.env.EMAIL_SMTP_PASS,
     port: process.env.EMAIL_SMTP_PORT
-  },
-  redis: {
-    host: process.env.REDIS_HOST,
-    port: process.env.REDIS_PORT
   }
 }
 

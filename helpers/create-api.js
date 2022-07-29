@@ -10,7 +10,6 @@ const httpStatus = require('http-status');
 const logger = require('morgan');
 const methodOverride = require('method-override');
 const path = require('path');
-const Raven = require('raven');
 
 //import APIError from 'helpers/api-error'
 const APIError = require('./api-error');
@@ -27,8 +26,6 @@ module.exports = (app, config, routes, winstonInstance) => {
   app.use(methodOverride())
   app.use(helmet())
   app.use(cors())
-
-  Raven.config(config.raven_uri).install()
 
   const LOGGER_MSG =
     'HTTP {{req.method}} {{req.url}} {{res.statusCode}} {{res.responseTime}}ms'
@@ -91,10 +88,7 @@ module.exports = (app, config, routes, winstonInstance) => {
     const isServerError =
       err.status === httpStatus.INTERNAL_SERVER_ERROR || !err.status
 
-    if (isServerError && config.env === 'production') {
-      Raven.captureException(err)
-    }
-
+    
     let status = err.status || httpStatus.INTERNAL_SERVER_ERROR
     let response = {
       status_code: status,
