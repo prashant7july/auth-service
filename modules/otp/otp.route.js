@@ -1,11 +1,11 @@
 const { Router } = require('express');
-const expressJwt = require('express-jwt');
+var { expressjwt: jwt } = require("express-jwt")
 
 const otpCtrl = require('./otp.controller');
 const config = require('./../../config/config');
 
 const router = Router()
-const jwtConfig = expressJwt({ secret: config.jwtSecret })
+const jwtConfig = jwt({ secret: config.jwtSecret, algorithms: ["HS256"] })
 
 router.route('/').post(jwtConfig, otpCtrl.create)
 router.route('/').put(jwtConfig, otpCtrl.update)

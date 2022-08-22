@@ -1,8 +1,8 @@
 const { Router } = require('express');
-const expressJwt = require('express-jwt');
+var { expressjwt: jwt } = require("express-jwt")
 const validate = require('express-validation');
 const userCtrl = require('./user.controller');
-const userCtrlValidator = require('./user.validators');
+//const userCtrlValidator = require('./user.validators');
 const config = require('./../../config/config');
 const requireOtp = require('./../../middlewares/otp-middleware');
 
@@ -12,7 +12,7 @@ const router = Router()
 // var router = express.Router();
 
 // Error: secret should be set - config.js check and check the .env path
-const requireAuth = expressJwt({ secret: config.jwtSecret })
+const requireAuth = jwt({ secret: config.jwtSecret, algorithms: ["HS256"] })
 
 router.route('/').get(requireAuth, userCtrl.user)
 
@@ -20,7 +20,7 @@ router
   .route('/email')
   .post(
     requireAuth,
-    validate(userCtrlValidator.email),
+    //validate(userCtrlValidator.email),
     requireOtp,
     userCtrl.email
   )
@@ -31,7 +31,7 @@ router
   .route('/password')
   .post(
     requireAuth,
-    validate(userCtrlValidator.password),
+    //validate(userCtrlValidator.password),
     requireOtp,
     userCtrl.password
   )
@@ -40,7 +40,7 @@ router
   .route('/profile')
   .post(
     requireAuth,
-    validate(userCtrlValidator.email),
+    //validate(userCtrlValidator.email),
     requireOtp,
     userCtrl.profile
   )

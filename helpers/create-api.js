@@ -50,26 +50,41 @@ module.exports = (app, config, routes, winstonInstance) => {
 
   app.use('/api', routes)
 
-  app.use((err, req, res, next) => {
-    if (err instanceof expressValidation.ValidationError) {
-      const error = new APIError(
-        'Unprocessable Entity',
-        httpStatus.UNPROCESSABLE_ENTITY,
-        err.errors.map(e => e.messages[0])
-      )
-      return next(error)
-    } else if (!(err instanceof APIError)) {
-      const apiError = new APIError(err.message, err.status)
-      return next(apiError)
-    }
-    return next(err)
-  })
+  // app.use((err, req, res, next) => {
+  //   if (err instanceof expressValidation.ValidationError) {
+  //     const error = new APIError(
+  //       'Unprocessable Entity',
+  //       httpStatus.UNPROCESSABLE_ENTITY,
+  //       err.errors.map(e => e.messages[0])
+  //     )
+  //     return next(error)
+  //   } else if (!(err instanceof APIError)) {
+  //     const apiError = new APIError(err.message, err.status)
+  //     return next(apiError)
+  //   }
+  //   return next(err)
+  // })
 
-  // catch 404 and forward to error handler
+  // // catch 404 and forward to error handler
+  // app.use((req, res, next) => {
+  //   const err = new APIError('API not found', httpStatus.NOT_FOUND)
+  //   return next(err)
+  // })
+
   app.use((req, res, next) => {
-    const err = new APIError('API not found', httpStatus.NOT_FOUND)
-    return next(err)
-  })
+    const error = new Error("Not found");
+    error.status = 404;
+    next(error);
+  });
+
+  app.use((error, req, res, next) => {
+    res.status(error.status || 500);
+    res.json({
+      error: {
+        message: error.message
+      }
+    });
+  });
 
   if (config.env !== 'test') {
     app.use(
