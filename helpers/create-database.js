@@ -13,11 +13,12 @@ module.exports = ({ config }) => {
   // connect to mongo db
   const mongoUri = config.mongo.host
 
-  mongoose.connect(
-    mongoUri,
-    { server: { socketOptions: { keepAlive: 1 } } }
-  )
-
+  // mongoose.connect(
+  //   mongoUri,
+  //   { server: { socketOptions: { keepAlive: 1 } } }
+  // )
+  mongoose.connect(mongoUri);
+  
   // print mongoose logs in dev env
   if (config.mongooseDebug) {
     mongoose.set('debug', (collectionName, method, query, doc) => {

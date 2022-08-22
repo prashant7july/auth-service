@@ -20,7 +20,7 @@ module.exports = {
   },
   email: {
     address: process.env.EMAIL_FROM_ADDRESS,
-    name: process.EMAIL_FROM_NAME
+    name: process.env.EMAIL_FROM_NAME
   },
   smtp: {
     host: process.env.EMAIL_SMTP_HOST,

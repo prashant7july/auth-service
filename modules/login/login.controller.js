@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const httpStatus = require('http-status');
 const speakeasy = require('speakeasy');
-const { validationResult } = require('express-validation');
+const { _, validationResult } = require('express-validator');
 
 const APIError = require('./../../helpers/api-error');
 const config = require('./../../config/config');
