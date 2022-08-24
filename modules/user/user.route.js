@@ -1,8 +1,8 @@
 const { Router } = require('express');
 var { expressjwt: jwt } = require("express-jwt")
-const validate = require('express-validation');
+const { body, _ } = require('express-validator');
 const userCtrl = require('./user.controller');
-//const userCtrlValidator = require('./user.validators');
+const userCtrlValidator = require('./user.validators');
 const config = require('./../../config/config');
 const requireOtp = require('./../../middlewares/otp-middleware');
 
@@ -20,7 +20,7 @@ router
   .route('/email')
   .post(
     requireAuth,
-    //validate(userCtrlValidator.email),
+    body(userCtrlValidator.email),
     requireOtp,
     userCtrl.email
   )
@@ -31,7 +31,7 @@ router
   .route('/password')
   .post(
     requireAuth,
-    //validate(userCtrlValidator.password),
+    body(userCtrlValidator.password),
     requireOtp,
     userCtrl.password
   )
@@ -40,7 +40,7 @@ router
   .route('/profile')
   .post(
     requireAuth,
-    //validate(userCtrlValidator.email),
+    body(userCtrlValidator.email),
     requireOtp,
     userCtrl.profile
   )
