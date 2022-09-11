@@ -1,4 +1,3 @@
-const bodyParser = require('body-parser');
 const compress = require('compression');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
@@ -11,7 +10,6 @@ const logger = require('morgan');
 const methodOverride = require('method-override');
 const path = require('path');
 
-//import APIError from 'helpers/api-error'
 const APIError = require('./api-error');
 
 module.exports = (app, config, routes, winstonInstance) => {
@@ -19,8 +17,8 @@ module.exports = (app, config, routes, winstonInstance) => {
     app.use(logger('dev'))
   }
 
-  app.use(bodyParser.json())
-  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(express.json())
+  app.use(express.urlencoded({ extended: true }))
   app.use(cookieParser())
   app.use(compress())
   app.use(methodOverride())
