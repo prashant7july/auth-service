@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const util = require('util');
 
 module.exports = ({ config }) => {
-  const debug = require('debug')('authmobile:index')
+  const debug = require('debug')('authservice:index')
 
   // make bluebird default Promise
   Promise = require('bluebird') // eslint-disable-line no-global-assign

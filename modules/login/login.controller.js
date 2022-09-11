@@ -68,6 +68,7 @@ async function login(req, res, next) {
       })
     }
 
+    //const token = jwt.sign(user.getPublicFields(), config.jwtSecret, { expiresIn: expiresIn, algorithm: 'RS256' });
     const token = jwt.sign(user.getPublicFields(), config.jwtSecret)
 
     return res.json({
