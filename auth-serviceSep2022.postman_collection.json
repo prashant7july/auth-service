@@ -1,0 +1,982 @@
+{
+	"info": {
+		"_postman_id": "2627533b-4aa5-4eaf-9609-59b3bc4c5bef",
+		"name": "microservices-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"item": [
+				{
+					"name": "http://localhost:4041/api/signup",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true,
+							"content-length": true,
+							"host": true,
+							"connection": true,
+							"accept-encoding": true,
+							"accept": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiZGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNSwic2Vzc2lvbl90b2tlbiI6ImY2MzIzMjc2OWUyYzdlZjdiMjFlMDJiYjhjMDExNGZmMTQ5YWZmYzU1Y2E4YTk1YjJlZjc0MWFhZTA4NDhlOWUifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNX0sIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiYWRfaWJjX2lkIiwiYWRfY3BfaWQiLCJhZF9uYW1lIiwiYWRfcGFzc3dvcmQiLCJhZF9jb2RlIiwiYWRfZW1haWwiLCJhZF9tb2JpbGUiLCJhZF9wcm9maWxlIiwib25ib2FyZF9zdGVwIiwicGF5bWVudF9zdGF0dXMiLCJkZXNpZ25hdGlvbiIsImNvdW50cnlfaWQiLCJjb3VudHJ5X2NhbGxpbmdfY29kZSIsImFkX3BhcmVudCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlfSwiaWF0IjoxNjQwMTg1NjYyLCJleHAiOjE2NTU3Mzc2NjJ9.84pFMNEVjP2y8RBXwr8iNrhx_yJfT0f3cPbxHhe7dZ0",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4041/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"signup"
+							]
+						},
+						"description": "Page execute in Web Browser for Registration"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4041/api/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiZGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNSwic2Vzc2lvbl90b2tlbiI6ImY2MzIzMjc2OWUyYzdlZjdiMjFlMDJiYjhjMDExNGZmMTQ5YWZmYzU1Y2E4YTk1YjJlZjc0MWFhZTA4NDhlOWUifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNX0sIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiYWRfaWJjX2lkIiwiYWRfY3BfaWQiLCJhZF9uYW1lIiwiYWRfcGFzc3dvcmQiLCJhZF9jb2RlIiwiYWRfZW1haWwiLCJhZF9tb2JpbGUiLCJhZF9wcm9maWxlIiwib25ib2FyZF9zdGVwIiwicGF5bWVudF9zdGF0dXMiLCJkZXNpZ25hdGlvbiIsImNvdW50cnlfaWQiLCJjb3VudHJ5X2NhbGxpbmdfY29kZSIsImFkX3BhcmVudCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlfSwiaWF0IjoxNjQwMTg1NjYyLCJleHAiOjE2NTU3Mzc2NjJ9.84pFMNEVjP2y8RBXwr8iNrhx_yJfT0f3cPbxHhe7dZ0",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testtest\",\n    \"name\": \"test\",\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\",\n    \"password_confirmation\": \"test@1234\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4041/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiZGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNSwic2Vzc2lvbl90b2tlbiI6ImY2MzIzMjc2OWUyYzdlZjdiMjFlMDJiYjhjMDExNGZmMTQ5YWZmYzU1Y2E4YTk1YjJlZjc0MWFhZTA4NDhlOWUifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNX0sIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiYWRfaWJjX2lkIiwiYWRfY3BfaWQiLCJhZF9uYW1lIiwiYWRfcGFzc3dvcmQiLCJhZF9jb2RlIiwiYWRfZW1haWwiLCJhZF9tb2JpbGUiLCJhZF9wcm9maWxlIiwib25ib2FyZF9zdGVwIiwicGF5bWVudF9zdGF0dXMiLCJkZXNpZ25hdGlvbiIsImNvdW50cnlfaWQiLCJjb3VudHJ5X2NhbGxpbmdfY29kZSIsImFkX3BhcmVudCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlfSwiaWF0IjoxNjQwMTg1NjYyLCJleHAiOjE2NTU3Mzc2NjJ9.84pFMNEVjP2y8RBXwr8iNrhx_yJfT0f3cPbxHhe7dZ0",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"testtest\",\n    \"name\": \"test\",\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\",\n    \"password_confirmation\": \"test@1234\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/api/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"api",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-j6fSu0UkcOz1hpCoNEVEESBemH8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 Sep 2022 11:28:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"631b237409c3ad6d66654548\",\n        \"name\": \"test\",\n        \"username\": \"testtest\",\n        \"email\": \"test@test.com\",\n        \"is_admin\": false,\n        \"is_otp\": false,\n        \"is_verified\": false,\n        \"is_active\": false\n    }\n}"
+						},
+						{
+							"name": "400 Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiZGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNSwic2Vzc2lvbl90b2tlbiI6ImY2MzIzMjc2OWUyYzdlZjdiMjFlMDJiYjhjMDExNGZmMTQ5YWZmYzU1Y2E4YTk1YjJlZjc0MWFhZTA4NDhlOWUifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNX0sIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiYWRfaWJjX2lkIiwiYWRfY3BfaWQiLCJhZF9uYW1lIiwiYWRfcGFzc3dvcmQiLCJhZF9jb2RlIiwiYWRfZW1haWwiLCJhZF9tb2JpbGUiLCJhZF9wcm9maWxlIiwib25ib2FyZF9zdGVwIiwicGF5bWVudF9zdGF0dXMiLCJkZXNpZ25hdGlvbiIsImNvdW50cnlfaWQiLCJjb3VudHJ5X2NhbGxpbmdfY29kZSIsImFkX3BhcmVudCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlfSwiaWF0IjoxNjQwMTg1NjYyLCJleHAiOjE2NTU3Mzc2NjJ9.84pFMNEVjP2y8RBXwr8iNrhx_yJfT0f3cPbxHhe7dZ0",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"testtest\",\n    \"name\": \"test\",\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\",\n    \"password_confirmation\": \"test@1234\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4041/api/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"api",
+										"signup"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-hUyYyWpXW13lMLfmbwbL/gHfglU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 Sep 2022 11:28:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"message\": \"Email already exists.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:4041/api/signup/verify?token=",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiZGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNSwic2Vzc2lvbl90b2tlbiI6ImY2MzIzMjc2OWUyYzdlZjdiMjFlMDJiYjhjMDExNGZmMTQ5YWZmYzU1Y2E4YTk1YjJlZjc0MWFhZTA4NDhlOWUifSwiX3ByZXZpb3VzRGF0YVZhbHVlcyI6eyJpZCI6MzQzNiwiYWRfaWJjX2lkIjo0OTk5MiwiYWRfY3BfaWQiOjAsImFkX25hbWUiOiJBbWl0IHlhZGF2IiwiYWRfcGFzc3dvcmQiOiJaRVpaVlZkck5scHFXRFpxYmpGa1ZFNWFWblJoUVQwOSIsImFkX2NvZGUiOiJCSUFZMDAzNDM2IiwiYWRfZW1haWwiOiJhbWl0eTI5MzJAZ21haWwuY29tIiwiYWRfbW9iaWxlIjoiOTE0MDkwMTM1MSIsImFkX3Byb2ZpbGUiOiJwcm9kL3VwbG9hZHMvcHJvZmlsZS8xNjIyMzQxODkzNTM2ZDY3ZmE5MDEtOWU0Yy00NmQxLWFlYzctN2JkZTE5NDBjOTY5LmpwZyIsIm9uYm9hcmRfc3RlcCI6MTIsInBheW1lbnRfc3RhdHVzIjoxLCJkZXNpZ25hdGlvbiI6OTMsImNvdW50cnlfaWQiOjEwMCwiY291bnRyeV9jYWxsaW5nX2NvZGUiOiIrOTEiLCJhZF9wYXJlbnQiOjIwNX0sIl9jaGFuZ2VkIjp7fSwiX29wdGlvbnMiOnsiaXNOZXdSZWNvcmQiOmZhbHNlLCJfc2NoZW1hIjpudWxsLCJfc2NoZW1hRGVsaW1pdGVyIjoiIiwicmF3Ijp0cnVlLCJhdHRyaWJ1dGVzIjpbImlkIiwiYWRfaWJjX2lkIiwiYWRfY3BfaWQiLCJhZF9uYW1lIiwiYWRfcGFzc3dvcmQiLCJhZF9jb2RlIiwiYWRfZW1haWwiLCJhZF9tb2JpbGUiLCJhZF9wcm9maWxlIiwib25ib2FyZF9zdGVwIiwicGF5bWVudF9zdGF0dXMiLCJkZXNpZ25hdGlvbiIsImNvdW50cnlfaWQiLCJjb3VudHJ5X2NhbGxpbmdfY29kZSIsImFkX3BhcmVudCJdfSwiaXNOZXdSZWNvcmQiOmZhbHNlfSwiaWF0IjoxNjQwMTg1NjYyLCJleHAiOjE2NTU3Mzc2NjJ9.84pFMNEVjP2y8RBXwr8iNrhx_yJfT0f3cPbxHhe7dZ0",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4041/api/signup/verify?token=a4996f1dc439614fb05437fa36616c6f0f2005d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"signup",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "a4996f1dc439614fb05437fa36616c6f0f2005d2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "http://localhost:4041/api/login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"console.log(pm.response.json())",
+									"const response = pm.response.json();",
+									"console.log(response.token)",
+									"pm.globals.set(\"token\",response.token)",
+									"pm.globals.set(\"user_id\",response.user._id)",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4041/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 Ok 2nd Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-qI2vwMcIFJHURe4xW1DfOnm0m9E\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 Sep 2022 11:39:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"One time password was sent to your email.\",\n    \"user\": {\n        \"user_id\": \"631b237409c3ad6d66654548\",\n        \"is_otp\": true\n    }\n}"
+						},
+						{
+							"name": "200 Ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test@test.com\",\n    \"password\": \"test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "502"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f6-9LUX5gNLquAiNxgKZgeuYQRVCYQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 Sep 2022 11:30:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzFiMjM3NDA5YzNhZDZkNjY2NTQ1NDgiLCJuYW1lIjoidGVzdCIsInVzZXJuYW1lIjoidGVzdHRlc3QiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpc19hZG1pbiI6ZmFsc2UsImlzX290cCI6ZmFsc2UsImlzX3ZlcmlmaWVkIjp0cnVlLCJpc19hY3RpdmUiOnRydWUsImlhdCI6MTY2MjcyMzAxMH0.ygbOYgMS-Ef0VDa4rqBcv2-czGza1rXcAcIgXeEOnK4\",\n    \"user\": {\n        \"_id\": \"631b237409c3ad6d66654548\",\n        \"name\": \"test\",\n        \"username\": \"testtest\",\n        \"email\": \"test@test.com\",\n        \"is_admin\": false,\n        \"is_otp\": false,\n        \"is_verified\": true,\n        \"is_active\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:4041/api/login/otp",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"{{token}}\",\n    \"user_id\": \"{{user_id}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4041/api/login/otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"login",
+								"otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"token\": \"{{token}}\",\n    \"user_id\": \"{{user_id}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4041/api/login/otp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4041",
+									"path": [
+										"api",
+										"login",
+										"otp"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-/usm3OIwmB7nOy9gTcTxjUwhbgA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 Sep 2022 11:31:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"message\": \"Unable to verify token. Please request for a new qrcode\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:4041/api/user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4041/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4041/api/user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"prasan7july@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4041/api/user/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4041",
+							"path": [
+								"api",
+								"user",
+								"email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4041/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4041/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4041",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4041/api/health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4041/api/health-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4041",
+					"path": [
+						"api",
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

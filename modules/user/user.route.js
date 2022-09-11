@@ -1,10 +1,11 @@
 const { Router } = require('express');
-var { expressjwt: jwt } = require("express-jwt")
+//const { expressjwt: jwt } = require("express-jwt")
 const { body, _ } = require('express-validator');
 const userCtrl = require('./user.controller');
 const userCtrlValidator = require('./user.validators');
 const config = require('./../../config/config');
 const requireOtp = require('./../../middlewares/otp-middleware');
+const requireAuth = require('./../../helpers/auth.middleware');
 
 const router = Router()
 // OR
@@ -12,7 +13,7 @@ const router = Router()
 // var router = express.Router();
 
 // Error: secret should be set - config.js check and check the .env path
-const requireAuth = jwt({ secret: config.jwtSecret, algorithms: ["HS256"] })
+//const requireAuth = jwt({ secret: config.jwtSecret, algorithms: ["HS256"] })
 
 router.route('/').get(requireAuth, userCtrl.user)
 
