@@ -2,7 +2,6 @@ const httpStatus = require('http-status');
 const APIError = require('./../../helpers/api-error');
 const createRandomToken = require('./../../helpers/create-random-token');
 const UserRepo = require('./../../repos/user-repo');
-//const queue = require('./../../helpers/queue');
 
 const {
   MSG_EMAIL_EXISTS,
