@@ -29,18 +29,18 @@ module.exports = (app, config, routes, winstonInstance) => {
     'HTTP {{req.method}} {{req.url}} {{res.statusCode}} {{res.responseTime}}ms'
 
   // enable detailed API logging in dev env
-  if (config.env === 'development') {
-    expressWinston.requestWhitelist.push('body')
-    expressWinston.responseWhitelist.push('body')
-    app.use(
-      expressWinston.logger({
-        winstonInstance,
-        meta: true, // optional: log meta data about request (defaults to true)
-        msg: LOGGER_MSG,
-        colorStatus: true // Color the status code (default green, 3XX cyan, 4XX yellow, 5XX red).
-      })
-    )
-  }
+  // if (config.env === 'development') {
+  //   expressWinston.requestWhitelist.push('body')
+  //   expressWinston.responseWhitelist.push('body')
+  //   app.use(
+  //     expressWinston.logger({
+  //       winstonInstance,
+  //       meta: true, // optional: log meta data about request (defaults to true)
+  //       msg: LOGGER_MSG,
+  //       colorStatus: true // Color the status code (default green, 3XX cyan, 4XX yellow, 5XX red).
+  //     })
+  //   )
+  // }
 
   app.get('/', (req, res) => res.send('OK'))
 
