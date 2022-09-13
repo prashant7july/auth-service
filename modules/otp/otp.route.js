@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const otpCtrl = require('./otp.controller');
-const requireAuth = require('./../../helpers/auth.middleware');
+const requireAuth = require('./../../middlewares/jwt-middleware');
 const router = Router()
 
 router.route('/').post(requireAuth, otpCtrl.create)
