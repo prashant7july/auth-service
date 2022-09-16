@@ -54,16 +54,18 @@ async function login(req, res, next) {
         encoding: 'base32'
       })
 
-      sendOtpEmail(user.email, {
-        name: user.name,
-        otp: token
-      })
+      //For Test This Comment Used Because Email Not Work.
+      // sendOtpEmail(user.email, {
+      //   name: user.name,
+      //   otp: token
+      // })
 
       return res.json({
         message: 'One time password was sent to your email.',
         user: {
           user_id: user._id,
-          is_otp: user.is_otp
+          is_otp: user.is_otp,
+          otp: token //For Test This Object Used Because Email Not Work.
         }
       })
     }
